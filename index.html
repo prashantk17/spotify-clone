@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <div class="container flex">
+      <aside class="sidebar bg-grey rounded">
+        <div class="close">
+          <i data-lucide="x" class="invert"></i>
+        </div>
+        <div class="home rounded">
+          <div class="logo">
+            <i data-lucide="music" class="invert"></i>
+          </div>
+          <ul>
+            <li><i data-lucide="home" class="invert"></i> Home</li>
+            <li><i data-lucide="search" class="invert"></i> Search</li>
+          </ul>
+        </div>
+        <div class="library bg-grey rounded">
+          <div class="heading">
+            <i data-lucide="library" class="invert"></i>
+            <h2>Your Library</h2>
+          </div>
+          <div class="songList">
+            <ul></ul>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-view bg-grey rounded">
+        <header class="header">
+          <div class="nav">
+            <i data-lucide="menu" class="invert hamburger"></i>
+          </div>
+          <div class="buttons">
+            <button class="signupbtn">Sign up</button>
+            <button class="loginbtn">Log in</button>
+          </div>
+        </header>
+        <div class="spotifyPlaylists">
+          <h1>Featured Playlists</h1>
+          <div class="cardContainer"></div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="playbar">
+      <div class="seekbar">
+        <div class="circle"></div>
+      </div>
+      <div class="abovebar">
+        <div class="songinfo">
+          <div class="song-title"></div>
+          <div class="song-artist"></div>
+        </div>
+        <div class="songbuttons">
+          <button id="previous"><i data-lucide="skip-back"></i></button>
+          <button id="play"><i data-lucide="play"></i></button>
+          <button id="next"><i data-lucide="skip-forward"></i></button>
+        </div>
+
+        <div class="timevol">
+          <div class="songtime">00:00 / 00:00</div>
+          <div class="volume">
+            <i data-lucide="volume-2"></i>
+            <div class="range">
+              <input type="range" name="volume" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="script/script.js"></script>
+  </body>
+</html>

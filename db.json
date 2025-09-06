@@ -1,0 +1,40 @@
+{
+  "albums": [
+    {
+      "id": "Lofi",
+      "title": "Lofi Beats",
+      "description": "Chillhop, study, and relax",
+      "cover": "./music/album-lofi/cover.jpg",
+      "songs": [
+        {
+          "title": "Midnight Stroll",
+          "artist": "NCS",
+          "file": "./music/Lofi/song1.mp3"
+        },
+        {
+          "title": "Cafe Vibe",
+          "artist": "NCS",
+          "file": "./music/Lofi/song2.mp3"
+        }
+      ]
+    },
+    {
+      "id": "Rock",
+      "title": "Rock Anthems",
+      "description": "The greatest rock hits",
+      "cover": "./music/Rock/cover.jpg",
+      "songs": [
+        {
+          "title": "Highway to ASCII",
+          "artist": "The Devs",
+          "file": "./music/Rock/song1.mp3"
+        },
+        {
+          "title": "Highway to ASCII",
+          "artist": "The Devs",
+          "file": "./music/Rock/song2.mp3"
+        }
+      ]
+    }
+  ]
+}
